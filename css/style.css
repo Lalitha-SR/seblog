@@ -1,0 +1,117 @@
+/* styles.css */
+html, body {
+    height: 100%; /* Ensures the full height for sticky footer */
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Comic Sans MS', 'Arial', sans-serif;
+    background-color: #f4f4f9;
+    color: #333;
+    display: flex;
+    flex-direction: column; /* Makes flexbox control the layout */
+}
+
+header {
+    display: flex;
+    flex-direction: row; /* Changed from column to row */
+    align-items: center; /* Center-align elements vertically */
+    justify-content: center; /* Center-align elements horizontally */
+    padding: 2px;
+    background-color: #ff6347;
+}
+
+header h1, header .header-l {
+    margin: 0 10px; /* Adds horizontal spacing between h1 and image */
+}
+
+.header-l {
+    max-width: 100px; /* Limit logo size */
+    height: auto; /* Maintain aspect ratio */
+}
+
+main {
+    flex: 1; /* Allows main to expand and fill available space */
+    padding: 20px;
+    text-align: center;
+}
+
+/* General styles for blog posts */
+.blog-post {
+    background-color: #fff;
+    margin: 20px auto;
+    padding: 20px;
+    width: 80%;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+/* Modified image styles within blog posts for left alignment */
+.blog-post img {
+    max-width: 100%;
+    height: auto;
+    float: left; /* Aligns image to the left */
+    margin-right: 20px; /* Adds space between the image and the text */
+    margin-bottom: 20px; /* Space below the image if no text wraps around it */
+}
+
+
+footer {
+    text-align: center;
+    padding: 10px 0;
+    background-color: #ff6347;
+    width: 100%;
+    margin: 0;
+}
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 2;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0,0,0,0.5);
+}
+
+.modal-content {
+    background-color: #fefefe;
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%; /* More flexible for smaller devices */
+}
+
+.close {
+    color: #aaaaaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        height: auto;
+    }
+
+    .header-logo, .header-l {
+        position: static;
+        margin: 10px auto;
+        height: 60px;
+    }
+}
+
+@media (max-width: 480px) {
+    .blog-post {
+        width: 100%;
+    }
+}
