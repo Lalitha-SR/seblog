@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cartoon Software Fails</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <script src="./js/script.js" defer></script> <!-- Correct way to include JavaScript -->
+
+</head>
+<body>
+    <header>
+        <h1>Software Failure</h1>
+        <img src="./img/Detectivejerryrealposter-removebg-preview.png" class="header-l">
+    </header>
+    <main>
+        <!-- Each section is now clickable and will open a modal -->
+        <div class="blog-post" onclick="openModal('modal1')">
+            <h2>Episode 1: Therac-25 Radiation Machine Failure</h2>
+            <img src="./img/thearc.webp" alt="Cartoon of an infinite loop" width="150px" style="float: left; margin-right: 1px;">
+
+            <p>This episode dives into the time we accidentally created a loop that crashed the server. Hilarity ensued!</p>
+        </div>
+        <div class="blog-post" onclick="openModal('modal2')">
+            <h2>Episode 2: Ariane 5 Rocket Explosion</h2>
+            <img src="./img/4st1.jpg" alt="Cartoon of a rogue semicolon">
+            <p>Discover how a tiny semicolon can bring down an entire application in this thrilling second episode!</p>
+        </div>
+        <div class="blog-post" onclick="openModal('modal3')">
+          <h2>Episode 3: AT&T Network Failure (1990)</h2>
+          <img src="loop-cartoon.png" alt="Cartoon of an infinite loop">
+          <p>This episode dives into the time we accidentally created a loop that crashed the server. Hilarity ensued!</p>
+      </div>
+        <div class="blog-post" onclick="openModal('modal4')">
+        <h2>Episode 4: Toyota Unintended Acceleration (2000s)</h2>
+        <img src="loop-cartoon.png" alt="Cartoon of an infinite loop">
+        <p>This episode dives into the time we accidentally created a loop that crashed the server. Hilarity ensued!</p>
+      </div>
+      <div class="blog-post" onclick="openModal('modal5')">
+        <h2>Episode 5: Obamacare Website Launch(2014s)</h2>
+        <img src="loop-cartoon.png" alt="Cartoon of an infinite loop">
+        <p>This episode dives into the time we accidentally created a loop that crashed the server. Hilarity ensued!</p>
+      </div>
+        <!-- More sections -->
+        <footer>
+            <p>© 2024 Cartoon Software Fails. All rights reserved.</p>
+        </footer>
+    </main>
+    <div id="modal1" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('modal1')">&times;</span>
+            <h2>Episode 1: Therac-25 Radiation Machine Failure</h2>
+            <img src="loop-cartoon.png" alt="Cartoon of an infinite loop">
+            <p>This episode dives into the time we accidentally created a loop that crashed the server. Hilarity ensued!</p>
+        </div>
+    </div>
+    <div id="modal2" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('modal2')">&times;</span>
+            <h2>Episode 2: Ariane 5 Rocket Explosion</h2>
+            <img src="semicolon-cartoon.png" alt="Cartoon of a rogue semicolon">
+            <p>Discover how a tiny semicolon can bring down an entire application in this thrilling second episode!</p>
+        </div>
+    </div>
+    <div id="modal3" class="modal">
+      <div class="modal-content">
+          <span class="close" onclick="closeModal('modal3')">&times;</span>
+          <h2>Episode 3: AT&T Network Failure (1990)</h2>
+          <img src="semicolon-cartoon.png" alt="Cartoon of a rogue semicolon">
+          <p>Discover how a tiny semicolon can bring down an entire application in this thrilling second episode!</p>
+      </div>
+  </div>
+  
+</div>
+  <div id="modal4" class="modal">
+    <div class="modal-content">
+        <span class="close" onclick="closeModal('modal4')">&times;</span>
+        <h2>Episode 4: Toyota Unintended Acceleration (2000s)</h2>
+        <img src="semicolon-cartoon.png" alt="Cartoon of a rogue semicolon">
+        <p>Discover how a tiny semicolon can bring down an entire application in this thrilling second episode!</p>
+    </div>
+  </div>
+      <div id="modal5" class="modal">
+       <div class="modal-content">
+        <span class="close" onclick="closeModal('modal5')">&times;</span>
+        <h2>Episode 5:Obamacare Website Launch(2014)</h2>
+        <img src="semicolon-cartoon.png" alt="Cartoon of a rogue semicolon">
+        <p>Discover how a tiny semicolon can bring down an entire application in this thrilling second episode!</p>
+    </div>
+    
+   
+   
+</body>
+</html>
